@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo App</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/todo.css">
+        <script src="https://kit.fontawesome.com/b34c5b0821.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="assets/js/lib/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap Might Be Required -->
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()"><i class="fas fa-user-cog"></i> Settings</button>
+        </div>
+        
+
+        <section>
+            <div id="container">
+                <h1>ToDo List<i class="far fa-edit"></i></h1>
+                <input class="title" type="text" placeholder="Name Your ToDo" style="display: none;">
+                <p class="progress"> <span id="done">test</span> of <span id="total">test</span> completed <span id="celebrate"><i class="fas fa-thumbs-up"></i></span></p>
+                <input id="add" type="text" placeholder="Add a new ToDo">
+                <ul>
+                    <li><span class="can"><i class="far fa-times-circle"></i></span> Task 1</li>
+                    <li><span class="can"><i class="far fa-times-circle"></i></span> Task 2</li>
+                    <li><span class="can"><i class="far fa-times-circle"></i></span> Task 3</li>
+                </ul>
+            </div>
+            <div id="addNew">
+                <h2><i class="fas fa-plus-circle"></i></h2>
+            </div>
+        </section>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <p id="sideBarText">Customize your list!</p>
+            <p id="options">Backgrounds</p>
+            <div id="bgChoices">
+                <img id="imageOne" src="assets/imgs/backgrounds/rainbow-galaxy.jpeg">
+                <img id="imageTwo" src="assets/imgs/backgrounds/unicorn-sky.jpeg">
+                <img id="imageThree" src="assets/imgs/backgrounds/usa-space.jpg">
+                <img id="imageFour" src="assets/imgs/backgrounds/nasa.jpg">
+            </div>
+            
+        </div>
+
+        
+
+        
+        <script type="text/javascript" src="assets/js/todo.js"></script>
+    </body>
+</html>
