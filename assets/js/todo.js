@@ -4,7 +4,7 @@ var done = 0;
 init();
 
 function init() {
-    $("input[type='text']").hide();
+    $("#add").hide();
     $("#total").text(total);
     $("#done").text(done);
     $("#celebrate").hide();
@@ -65,12 +65,12 @@ $("#add").keypress(function(event){
         doNotCelebrate();
     }
 });
-/*
+
 // add another ToDo List
-$(".fa-plus-circle")..click(function(){
+$(".fa-plus-circle").click(function(){
     alert("add new list");
 });
-*/
+
 // expand text box
 $(".fa-edit").click(function(){
     $("#add").fadeToggle();
@@ -79,15 +79,11 @@ $(".fa-edit").click(function(){
 // hover add todo icon
 $(".fa-edit").hover(function() {
     $(this).css('cursor','pointer').attr('title', 'Add A ToDo');
-}, function() {
-    $(this).css('cursor','auto');
 });
 
 // hover remove todo icon
 $("span").hover(function() {
-    $(this).css('cursor','pointer').attr('title', 'Remove Task');
-}, function() {
-    $(this).css('cursor','auto');
+    $(this).attr('title', 'Remove Task');
 });
 
 // hover todo to complete
@@ -97,9 +93,14 @@ $("li").hover(function() {
     $(this).css('cursor','auto');
 });
 
+// DRY this up a bit once you solve the scaling background issue
+
 $("#imageOne").click(function(){
     $("body").css("background", "url('assets/imgs/backgrounds/rainbow-galaxy.jpeg')");
     $("body").css("background-size", "cover");
+    $("body").css("-webkit-background-size", "cover");
+    $("body").css("-moz-background-size", "cover");
+    $("body").css("-o-background-size", "cover");
 });
 
 $("#imageTwo").click(function(){
