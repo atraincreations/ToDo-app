@@ -12,6 +12,7 @@
         <!-- Bootstrap Might Be Required -->
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Luckiest+Guy|Permanent+Marker|Special+Elite&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="main">
@@ -20,10 +21,11 @@
         
 
         <section>
-            <div id="container">
+            <div class="container">
                 <!--<h1>ToDo List<i class="far fa-edit"></i></h1>-->
                 <div class="title-entry"><input class="title" type="text" placeholder="Name Your ToDo"><i class="far fa-edit"></i></div>
-                <p class="progress"> <span id="done">test</span> of <span id="total">test</span> completed <span id="celebrate"><i class="fas fa-thumbs-up"></i></span></p>
+                <p class="progress"> <span id="done">test</span> of <span id="total">test</span> completed <span id="celebrate"> 
+                    <i class="fas fa-thumbs-up"></i></span> <span id="clear">Clear All</span> </p>
                 <input id="add" type="text" placeholder="Add a new ToDo">
                 <ul>
                     <li><span class="can"><i class="far fa-times-circle"></i></span> Task 1</li>
@@ -31,22 +33,27 @@
                     <li><span class="can"><i class="far fa-times-circle"></i></span> Task 3</li>
                 </ul>
             </div>
-            <div id="addNew">
-                <h2><i class="fas fa-plus-circle"></i></h2>
-            </div>
+
         </section>
 
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <p id="sideBarText">Customize your list!</p>
-            <p id="options">Backgrounds</p>
+            <p id="options">Backgrounds <i class="fas fa-redo" id="bgReset"></i></p>
             <div id="bgChoices">
                 <img id="imageOne" src="assets/imgs/backgrounds/rainbow-galaxy.jpeg">
                 <img id="imageTwo" src="assets/imgs/backgrounds/unicorn-sky.jpeg">
                 <img id="imageThree" src="assets/imgs/backgrounds/usa-space.jpg">
                 <img id="imageFour" src="assets/imgs/backgrounds/nasa.jpg">
             </div>
-            
+            <div id="fontChoices">
+                <p id="titleFont">Change Font <i class="fas fa-redo" id="fontReset"></i></p>
+                <p id="specialElite">Special Elite</p>
+                <p id="indieFlower">Indie Flower</p>
+                <p id="luckiestGuy">Luckiest Guy</p>
+                <p id="lobster">Lobster</p>
+                <p id="permanentMarker">Permanent Marker</p>
+            </div>
         </div>
 
         
